@@ -1,0 +1,107 @@
+*{margin: 0%;padding: 0%;}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+  @keyframes slideInm {
+    0% {
+        transform: rotate(0deg)  ;
+     
+    }
+   
+    
+    99% {
+        transform: rotate(-3600deg)  ;
+        
+       
+      }
+    100%{transform:  translateX(300%);;}
+  }
+
+header{ display: flex;color:
+      
+     rgb(45, 34, 34); 
+     width: 100vw;
+     max-width: 100vw;
+     background-color: bisque;
+     animation: slideIn 1s forwards; 
+     }
+
+
+nav{color: darkgray;
+  display: flex;
+  background-color: darkblue;
+  height: 10vh;}
+main{color: darkkhaki;
+  background-color: darkseagreen;
+   height: auto;width: 70vw;}
+footer{color: darkslategray;background-color: deepskyblue; padding: 7vh;}
+
+
+
+.side{height:auto;width: 29vw; background-color: chocolate; 
+}
+.rot{height: 80vh;width: 80vw;}
+ul{display: flex; list-style: none; }
+nav ul li {padding-left: 18vw;}
+.about{padding-left: 30vw;}
+
+
+.search{ background-color: rgb(241, 236, 236);
+   height: 45px;width: 40vw;margin-top: 50px;
+   margin-left: 10vw;
+   box-shadow: 2%;
+   border-radius: 30px;
+   border-width: 5px;
+   
+  }
+.submit{ background-color: rgb(178, 176, 167); 
+  height: 20px;width: 50px;margin-top: 73px;
+  margin-left: 10px;
+  margin-right: 0vw;
+  border-radius: 10px;
+  text-shadow: 20px;
+}
+.submit:hover{transform: scale(1.3);}
+ol img{height: 250px;width: auto; max-width: 60vw; padding: 10px; background-color: blanchedalmond;}
+ol{display: flex;
+  flex-wrap: wrap;
+  
+
+
+}
+.main{background-color: rgb(182, 182, 194);
+  padding:2vw;
+  justify-content: center;
+  
+
+
+}
+.main ol{justify-content: center;}
+section ul{display: inline;}
+section ul img{padding: 10px; max-width: 25vw;}
+main h1{background-color: hsl(66, 79%, 76%);text-align: center;}
+footer{padding-top: 10px;}
+h5{color: rgb(198, 226, 221);margin-top: 5px;}
+h6{text-align: center;margin-right: 10vw;}
+header{height: 16vw;
+  min-height: 100px;
+
+}
+header img {width: 15vw;margin: 2px;
+  height: 15vw;
+    border-radius: 12vh;
+    }
+header img :hover{transform: scale(2.3) ;
+    transition-delay: 0.1s;
+    transition-duration: 1s;
+    border-color: brown;
+    animation: slideInm 4s linear 10;
+}
